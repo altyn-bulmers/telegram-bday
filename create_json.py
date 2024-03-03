@@ -1,4 +1,3 @@
-# Let's try creating the file again after the reset.
 import json
 
 # Sample data
