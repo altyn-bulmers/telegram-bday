@@ -22,7 +22,9 @@ def check_and_send_birthday_wishes(users_data, chat_id):
     # Convert UTC now to Kazakhstan time zone
     #today = datetime.datetime.utcnow().strftime("%m-%d")  # Use UTC to match the Cloud Function's timezone
     kz_tz = pytz.timezone('Asia/Almaty')
-    today = datetime.datetime.utcnow().replace(tzinfo=pytz.utc).astimezone(kz_tz).strftime("%m-%d")
+    utc_dt = datetime.datetime.utcnow().replace(tzinfo=pytz.utc)  # Make it timezone-aware
+    cet_dt = utc_dt.astimezone(pytz.timezone('CET')) #because the scheduler works in CET time
+    today = cet_dt.replace(tzinfo=pytz.utc).astimezone(kz_tz).strftime("%m-%d")
     
     
     for user_id, user_info in users_data.items():
