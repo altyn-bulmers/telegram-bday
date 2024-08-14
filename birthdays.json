@@ -1,14 +1,14 @@
 {
     "user1": {
         "birthday": "03-14",
-        "name": "Альберт Эйнштейн"
+        "name": "Albert Einstein"
     },
     "user2": {
         "birthday": "07-08",
-        "name": "Ян ЛеКун"
+        "name": "Yann LeCun"
     },
     "user3": {
         "birthday": "12-06",
-        "name": "Джеффри Хинтон"
+        "name": "Geoffrey Hinton"
     }
 }
