@@ -10,9 +10,9 @@ test_birthdays = {
 
 birthday_data = '''
 
-14 марта - Альберт Эйнштейн
-8 июля - Ян ЛеКун
-6 декабря - Джеффри Хинтон
+14 марта - Albert Einstein
+8 июля - Yann LeCun
+6 декабря - Geoffrey Hinton
 '''
 
 # Mapping of Russian month names to numerical representation
